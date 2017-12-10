@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.arshiya.Appoint">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:text="Your Appointments"
+    android:textSize="25sp"
+    android:gravity="center"
+    android:id="@+id/text"
+    android:textColor="#000"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/text"
+        android:id="@+id/list">
+    </ListView>
+</RelativeLayout>

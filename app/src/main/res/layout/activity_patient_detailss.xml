@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb"
+    tools:context="com.example.hp.arshiya.patient_detailss">
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Patient Details"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:textColor="#000"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:text="Aadhar Number"
+        android:textSize="19sp"
+        android:layout_marginStart="14dp"
+        android:layout_below="@+id/t1"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="130dp"
+        android:textColor="#000"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/t2"
+        android:layout_alignBottom="@+id/t2"
+        android:layout_toEndOf="@+id/t2"
+        android:id="@+id/e1" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="SEARCH"
+        android:textColor="#000"
+        android:layout_alignEnd="@+id/t1"
+        android:layout_alignTop="@+id/warn" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="13dp"
+        android:textSize="19sp"
+        android:text="Name"
+        android:textColor="#000"
+        android:layout_below="@+id/search"
+        android:layout_alignStart="@+id/warn" />
+
+    <TextView
+        android:id="@+id/age"
+        android:textColor="#000"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:textSize="19sp"
+        android:text="Age"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:textColor="#000"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:textSize="19sp"
+        android:text="Gender"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/age"
+        android:layout_alignStart="@+id/age" />
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:textColor="#000"
+        android:textSize="19sp"
+        android:text="Address"
+        android:layout_alignBaseline="@+id/e5"
+        android:layout_alignBottom="@+id/e5"
+        android:layout_toStartOf="@+id/e5" />
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:textSize="19sp"
+        android:textColor="#000"
+        android:text="Phone Number"
+        android:layout_below="@+id/e5"
+        android:layout_toStartOf="@+id/e5"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:textColor="#000"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/e2"
+        android:textColor="#000"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/name"
+        android:layout_toEndOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/e5"
+        android:textColor="#000"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/gender"
+        android:layout_toEndOf="@+id/gender" />
+
+
+    <TextView
+        android:id="@+id/warn"
+        android:textColor="#f10909"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/t2"
+        android:layout_below="@+id/t2"
+        android:text="TextView"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/e4"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/no"
+        android:layout_toEndOf="@+id/no"
+        android:ems="10"
+        android:textColor="#000"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/e3"
+        android:textColor="#000"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/gender"
+        android:layout_toEndOf="@+id/age"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <RadioGroup
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/gender"
+        android:layout_toEndOf="@+id/warn"
+        android:id="@+id/radioGroup"
+        android:layout_above="@+id/e5">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/radioGroup"
+            android:layout_toEndOf="@+id/radioGroup"
+            android:layout_weight="1"
+            android:text="Male"
+            android:textColor="#000"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:text="Female"
+            />
+    </RadioGroup>
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb"
+    tools:context="com.example.hp.arshiya.Doctor_details">
+
+<TextView
+android:id="@+id/textView1"
+android:layout_width="200dp"
+android:layout_height="40dp"
+android:layout_marginTop="0dp"
+    android:textColor="#000"
+android:text="Doctor Details"
+android:textSize="25dp"
+    android:textStyle="bold"
+android:layout_marginEnd="34dp"
+android:layout_alignParentTop="true"
+android:layout_alignEnd="@+id/radioGroup" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView1"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="17dp"
+        android:layout_toStartOf="@+id/editText2"
+        android:text="NAME"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginEnd="11dp" />
+
+<TextView
+android:id="@+id/textView2"
+android:layout_width="110dp"
+android:layout_height="30dp"
+android:layout_marginTop="20dp"
+android:text="AGE"
+
+android:textSize="20dp"
+android:layout_below="@+id/textView4"
+android:layout_alignStart="@+id/textView4" />
+    <EditText
+            android:id="@+id/editText3"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/editText4"
+            android:layout_alignTop="@+id/textView4"
+        />
+    <TextView
+    android:id="@+id/textView6"
+    android:layout_width="110dp"
+    android:layout_height="30dp"
+    android:text="SEX"
+    android:textSize="20dp"
+    android:layout_below="@+id/textView2"
+    android:layout_alignStart="@+id/textView2"
+    android:layout_marginTop="20dp"
+    android:layout_toStartOf="@+id/textView1" />
+    <EditText
+    android:layout_width="110dp"
+    android:layout_height="40dp"
+    android:id="@+id/editText1"
+    android:layout_alignTop="@+id/textView8"
+    android:layout_toEndOf="@+id/textView8"
+    android:layout_marginStart="11dp" />
+    <RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/radioGroup"
+    android:orientation="horizontal"
+    android:layout_above="@+id/textView8"
+    android:layout_alignEnd="@+id/button"
+        android:layout_marginRight="30dp"
+    >
+    <RadioButton
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MALE"
+        />
+<RadioButton
+    android:id="@+id/btn1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:text="FEMALE"
+    />
+</RadioGroup>
+    <TextView
+    android:id="@+id/textView8"
+    android:layout_width="120dp"
+    android:layout_height="30dp"
+    android:layout_marginTop="19dp"
+    android:text="SPECIALITY"
+    android:textSize="20dp"
+    android:layout_below="@+id/textView6"
+    android:layout_alignStart="@+id/textView6" />
+    <TextView
+    android:id="@+id/textView9"
+    android:layout_width="110dp"
+    android:layout_height="30dp"
+    android:layout_marginTop="15dp"
+    android:text="ADDRESS"
+    android:textSize="20dp"
+    android:layout_below="@+id/textView8"
+    android:layout_alignStart="@+id/textView8" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/editText5"
+        android:layout_alignEnd="@+id/editText5" />
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_alignTop="@+id/textView2"
+        android:inputType="number"
+        android:textSize="20sp" />
+    <TextView
+    android:id="@+id/textView10"
+    android:layout_width="110dp"
+    android:layout_height="30dp"
+    android:layout_marginTop="20dp"
+    android:text="EMAIL ID"
+    android:textSize="20dp"
+    android:layout_below="@+id/textView9"
+    android:layout_alignStart="@+id/textView9" />
+    <EditText
+    android:layout_width="110dp"
+    android:layout_height="30dp"
+    android:layout_marginTop="20dp"
+    android:layout_alignTop="@+id/textView10"
+    android:layout_alignStart="@+id/editText3"
+    android:id="@+id/editText5" />
+
+    <TextView
+    android:id="@+id/textView11"
+    android:layout_width="110dp"
+    android:layout_height="30dp"
+    android:layout_marginTop="20dp"
+    android:text="PHONE NO."
+    android:textSize="20dp"
+    android:layout_below="@+id/textView10"
+    android:layout_alignStart="@+id/textView10"
+        />
+    <EditText
+    android:layout_width="110dp"
+    android:layout_marginTop="20dp"
+    android:layout_height="30dp"
+    android:layout_alignTop="@+id/textView11"
+    android:layout_alignStart="@+id/editText5"
+    android:id="@+id/editText6" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="36dp"
+        android:text="SUBMIT" />
+    </RelativeLayout>

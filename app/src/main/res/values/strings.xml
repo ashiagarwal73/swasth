@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Swasth</string>
+    <string name="title_activity_patient_details">patient_details</string>
+    <string name="title_activity_appointments">Appointments</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb"
+    tools:context="com.example.hp.arshiya.Signup">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="LogIn"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_centerVertical="true"
+        android:hint="Enter password"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_alignStart="@+id/editText" />
+
+    <Button
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="29dp"
+        android:textColor="#000"
+        android:text="SignUp?"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:layout_below="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2" />
+</RelativeLayout>
+
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.arshiya">
+
+    <uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/swasth"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/swasth"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".first"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".patient_detailss" />
+        <activity android:name=".disease_select" />
+        <activity android:name=".assign_doctor" />
+        <activity android:name=".chat" />
+        <activity android:name=".Doctor_details" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Appoint">
+        </activity>
+    </application>
+</manifest>
